@@ -1,0 +1,226 @@
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("../imagens/imagem-princiapl-de-fundo.png");
+    background-position: center bottom;
+    background-attachment: fixed;
+    overflow-x: hidden ;
+    
+}
+
+.div-pai {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 850px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Estilos para div-filho1 */
+.div-filho1 {
+    width: 45%;
+    height: 65%;
+    padding-top: 25px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    border-radius: 13px 0 0 13px;
+    overflow: hidden;
+}
+
+/* Estilos para div-filho2 */
+.div-filho2 {
+    width: 58%;
+    height: 65%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(243, 239, 239, 0.3);
+    box-shadow: 1px 1px rgba(185, 184, 184);
+    border-radius: 0 13px 13px 0;
+    overflow: hidden;
+}
+
+/* Estilos para div-filho-filho2 (elemento dentro de div-filho2) */
+.div-filho2 .div-filho-filho2 {
+    width: 100%;
+    height: 85px;
+    margin-bottom: 45px;
+    text-align: center;
+    background-color: rgb(250, 160, 160);
+    border-radius: 0 13px 0 0;
+}
+
+/* Estilos para tabelas */
+table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: none;
+    padding: 15px;
+}
+
+form {
+    width: 60%;
+}
+
+form input {
+    border: none;
+    width: 100%;
+    height: 28px;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    border-radius: 10px;
+}
+
+form button {
+    border-radius: 10px;
+    background-image: url("../imagens/icone-buttom-peso.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 105%;
+    height: 50px;
+    border: none;
+    color: #2e2d2d;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+form input:focus {
+    background-color: rgb(255, 251, 251);
+}
+
+.msg-resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105%;
+    height: 50px;
+    background-color: aliceblue;
+    margin-top: 20%;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display:none;
+   
+
+}
+.msg-resultado2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105%;
+    height: 50px;
+    background-image:radial-gradient(rgb(52, 254, 52), rgb(107, 255, 107));
+    margin-top: 20%;
+    font-size: 22px;
+    border-radius: 5px;
+    text-align: center;
+    
+
+}
+.msg-resultado3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105%;
+    height: 50px;
+    background-image:linear-gradient(rgb(255, 12, 12), rgb(240, 75, 75));
+    margin-top: 20%;
+    font-size: 22px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.msg-resultado4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105%;
+    height: 50px;
+    background-image:linear-gradient(rgb(253, 103, 39), rgb(252, 135, 0));
+    margin-top: 20%;
+    font-size: 22px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.msg-resultado5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105%;
+    height: 50px;
+    background-image:linear-gradient(rgb(253, 235, 39), rgb(207, 185, 17));
+    margin-top: 20%;
+    font-size: 22px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+    .div-filho1 {
+        background-color: antiquewhite;
+        padding-left: 10px;
+        line-height: 0.9;
+    }
+
+    .div-filho2 {
+        border-radius: 5px;
+
+    }
+
+    form button {
+        align-items: center;
+    }
+
+    table th,
+    table td {
+        border: none;
+        padding: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .div-filho1 {
+        display: none;
+
+    }
+
+    .div-filho2 {
+        width: 150%;
+        height: 70%;
+        border-radius: 13px;
+    }
+
+    body {
+        background-image: url("../imagens/imagem-princiapl-de-fundo.png");
+        background-size: cover;
+        background-position: right bottom;
+    }
+
+}
