@@ -4,8 +4,8 @@ body {
     display: flex;
     justify-content: center;
     background-size: cover;
-    background-image: url("../imagens/imagem-princiapl-de-fundo.png");
-    background-position: center bottom;
+    background-image: url("..//imagens/6768116.jpg");
+    background-position: center ;
     background-attachment: fixed;
     overflow-x: hidden ;
     
@@ -23,6 +23,7 @@ body {
 
 /* Estilos para div-filho1 */
 .div-filho1 {
+    font-weight: bold;
     width: 45%;
     height: 65%;
     padding-top: 25px;
@@ -31,6 +32,7 @@ body {
     background-color: antiquewhite;
     border-radius: 13px 0 0 13px;
     overflow: hidden;
+    opacity: 0.8;
 }
 
 /* Estilos para div-filho2 */
@@ -41,8 +43,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(243, 239, 239, 0.3);
-    box-shadow: 1px 1px rgba(185, 184, 184);
+    background-color: rgba(251, 251, 251, 0.9);
+    box-shadow: 2px 2px rgba(185, 184, 184);
     border-radius: 0 13px 13px 0;
     overflow: hidden;
 }
@@ -75,7 +77,7 @@ form {
 }
 
 form input {
-    border: none;
+    
     width: 100%;
     height: 28px;
     font-size: 22px;
@@ -92,7 +94,6 @@ form button {
     background-repeat: no-repeat;
     width: 105%;
     height: 50px;
-    border: none;
     color: #2e2d2d;
     text-align: center;
     text-decoration: none;
@@ -102,11 +103,11 @@ form button {
 }
 
 button:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(246, 238, 238);
 }
 
 form input:focus {
-    background-color: rgb(255, 251, 251);
+    background-color: rgb(245, 253, 239);
 }
 
 .msg-resultado{
@@ -144,7 +145,7 @@ form input:focus {
     justify-content: center;
     width: 105%;
     height: 50px;
-    background-image:linear-gradient(rgb(255, 12, 12), rgb(240, 75, 75));
+    background-image:linear-gradient(rgb(255, 12, 12), rgb(255, 0, 0));
     margin-top: 20%;
     font-size: 22px;
     border-radius: 5px;
@@ -158,7 +159,7 @@ form input:focus {
     justify-content: center;
     width: 105%;
     height: 50px;
-    background-image:linear-gradient(rgb(253, 103, 39), rgb(252, 135, 0));
+    background-image:linear-gradient(rgb(255, 153, 29), rgb(253, 149, 29));
     margin-top: 20%;
     font-size: 22px;
     border-radius: 5px;
@@ -171,7 +172,7 @@ form input:focus {
     justify-content: center;
     width: 105%;
     height: 50px;
-    background-image:linear-gradient(rgb(253, 235, 39), rgb(207, 185, 17));
+    background-image:linear-gradient(rgb(227, 247, 6), rgb(238, 248, 54));
     margin-top: 20%;
     font-size: 22px;
     border-radius: 5px;
@@ -218,9 +219,10 @@ form input:focus {
     }
 
     body {
-        background-image: url("../imagens/imagem-princiapl-de-fundo.png");
+    
         background-size: cover;
         background-position: right bottom;
     }
+
 
 }
