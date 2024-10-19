@@ -7,13 +7,10 @@
     <link rel="stylesheet" type="text/css" href="../estilosCss/estilo.css">
     <title>Calculadora de peso</title>
     <link rel="icon" href="../imagens/favicon-16x16.png" type="image/x-icon">
-
-
 </head>
 
 <body>
     <div class="div-pai">
-
         <div class="div-filho1">
             <table border="1">
                 <tr>
@@ -53,25 +50,24 @@
 
         <div class="div-filho2">
             <div class="div-filho-filho2">
-               <h1>Calcule seu IMC</h1>
+                <h1>Calcule seu IMC</h1>
             </div>
 
-            <form action="" id="formulario">
-                <label for="">Peso:</label><br>
-                <input type="text" id="peso" name="peso"><br><br>
-
-                <label for="">Altura:</label><br>
-                <input type="text" id="altura" name="altura"><br><br>
-                <button id="botao" type="submit">Calcular</button>
-                <p><span class="msg-resultado"></span> </p>
-
-
-
+            <form action="inserir.php" method="POST" id="formulario">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+            
+                <label for="peso">Peso:</label><br>
+                <input type="number" id="peso" name="peso" step="0.01" required><br><br>
+            
+                <label for="altura">Altura:</label><br>
+                <input type="number" id="altura" name="altura" step="0.01" required><br><br>
+                
+                <button id="botao" type="submit">Calcular e Enviar</button>
+                <p><span class="msg-resultado"></span></p>
             </form>
         </div>
     </div>
-
-
 
     <script src="../arquivosJs/arquivo.js"></script>
 </body>
